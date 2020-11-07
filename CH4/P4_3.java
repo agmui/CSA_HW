@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 1
+ * P4.3
+ *input 3 cords of a triangle and outputs length of all sides, angles, perimeter, and area
+ ********************************/
 package CH4;
 
 import java.awt.geom.Point2D;

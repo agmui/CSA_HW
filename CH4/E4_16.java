@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 1
+ * E4.16
+ *Program asks for a number and puts a space between all the numbers
+ ********************************/
 package CH4;
 import java.util.Scanner;
 
