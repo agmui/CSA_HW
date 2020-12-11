@@ -2,6 +2,7 @@ package CH6;
 
 import java.util.Scanner;
 
+
 public class P6_18 {
     public static void main(String[] args) {
         //2 is the best ratio to use for maximum power

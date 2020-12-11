@@ -2,6 +2,7 @@ package CH6.P6_19;
 
 import javax.swing.JFrame;
 
+
 public class P6_19main {
     public static int width = 10*64;
     public static int height = 10*64;
