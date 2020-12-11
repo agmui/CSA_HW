@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class E6_4 {
+
     public static void main(String[] args) {
         int i = 0;
         String input = new Scanner(System.in).next();
