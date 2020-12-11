@@ -3,6 +3,7 @@ package CH6.P6_19;
 import javax.swing.JComponent;
 import java.awt.*;
 
+
 public class P6_19 extends JComponent {
     public static Color grey = new Color(50, 50, 50);
     public static Color lgrey = new Color(110, 110, 110);
