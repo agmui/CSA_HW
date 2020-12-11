@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 1
+ * P4.10
+ *class that shows how someone's bank account will grow
+ ********************************/
 package CH4;
 
 import java.util.Scanner;

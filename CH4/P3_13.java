@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 1
+ * P3.13
+ *class that has different greetings
+ ********************************/
 package CH4;
 
 public class P3_13 {
