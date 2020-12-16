@@ -3,7 +3,6 @@ package CH6.P6_19;
 import javax.swing.JComponent;
 import java.awt.*;
 
-
 public class P6_19 extends JComponent {
     public void paintComponent(Graphics g){
         int[][] board = new int[64][64];
