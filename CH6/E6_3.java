@@ -42,4 +42,3 @@ public class E6_3 {
         System.out.println("\n"+greatest + ", " + least + ", " + even + ", " + ( l.length - even) + ", " +l2);
     }
 }
-
