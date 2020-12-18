@@ -1,9 +1,3 @@
-/********************************
- * Anthony Mui
- * Period 1
- * P4.17
- *input Q1, Q2 and r to find coulombs force
- ********************************/
 package CH4;
 
 import java.util.Scanner;
