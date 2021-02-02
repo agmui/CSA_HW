@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 2
+ * P5.14
+ * prints type of wave based on table
+ ********************************/
 package CH5;
 
 import java.util.Scanner;

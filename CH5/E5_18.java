@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 2
+ * E5.18
+ * calculates tax based on status
+ ********************************/
 package CH5;
 
 import java.util.Scanner;

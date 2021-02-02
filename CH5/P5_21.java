@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 2
+ * P5.21
+ * prints if string will snap based on velocity
+ ********************************/
 package CH5;
 
 import java.util.Scanner;

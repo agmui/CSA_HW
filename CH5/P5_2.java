@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 2
+ * P5.2
+ * prints a table based on status
+ ********************************/
 package CH5;
 
 import java.util.Scanner;

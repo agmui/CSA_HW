@@ -1,3 +1,9 @@
+/********************************
+ * Anthony Mui
+ * Period 2
+ * E5.20
+ * prints the largest number
+ ********************************/
 package CH5;
 import java.util.Arrays;
 import java.util.Scanner;
