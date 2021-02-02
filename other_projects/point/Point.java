@@ -1,3 +1,9 @@
+/*
+* Anthony Mui
+* Period 2
+* Point Class
+* A class called point with test class
+* */
 package other_projects.point;
 import java.lang.Math;
 
