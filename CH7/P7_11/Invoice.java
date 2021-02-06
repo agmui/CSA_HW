@@ -1,3 +1,9 @@
+/*
+ * Anthony Mui
+ * Period 1
+ * E7.10
+ * asks for item price, amount, and if dog and prints out total
+ * */
 package CH7.P7_11;
 
 import java.util.ArrayList;

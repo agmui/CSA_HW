@@ -1,18 +1,25 @@
+/*
+ * Anthony Mui
+ * Period 1
+ * Sub assignment
+ * finds area of basic shapes
+ * */
+
 package other_projects.SubAssignments;
 
 import java.util.Scanner;
 
 public class GeometryCalculator {
-   public static void circle(int r){
+   public static void circle(float r){
        System.out.println(Math.pow(r, 2)+"pi");
    }
-   public static void rect(int l, int w){
+   public static void rect(float l, float w){
        System.out.println(l*w);
    }
-   public static void triangle(int base, int height){
+   public static void triangle(float base, float height){
        System.out.println(base*height/2);
    }
-   public static int invalidResponce(int x){
+   public static float invalidResponce(float x){
        if (x < 0){
            System.out.print("please input valid response: ");
            int a = new Scanner(System.in).nextInt();
@@ -33,25 +40,25 @@ public class GeometryCalculator {
            switch (x) {
                case 1 -> {
                    System.out.print("input radius: ");
-                   int r = new Scanner(System.in).nextInt();
+                   float r = new Scanner(System.in).nextFloat();
                    r = GeometryCalculator.invalidResponce(r);
                    GeometryCalculator.circle(r);
                }
                case 2 -> {
                    System.out.print("input length: ");
-                   int l = new Scanner(System.in).nextInt();
+                   float l = new Scanner(System.in).nextFloat();
                    l = GeometryCalculator.invalidResponce(l);
                    System.out.print("input width: ");
-                   int w = new Scanner(System.in).nextInt();
+                   float w = new Scanner(System.in).nextFloat();
                    w = GeometryCalculator.invalidResponce(w);
                    GeometryCalculator.rect(l, w);
                }
                case 3 -> {
                    System.out.print("input base: ");
-                   int base = new Scanner(System.in).nextInt();
+                   float base = new Scanner(System.in).nextFloat();
                    base = GeometryCalculator.invalidResponce(base);
                    System.out.print("input height: ");
-                   int height = new Scanner(System.in).nextInt();
+                   float height = new Scanner(System.in).nextFloat();
                    height = GeometryCalculator.invalidResponce(height);
                    GeometryCalculator.triangle(base, height);
                }
