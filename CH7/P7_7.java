@@ -1,3 +1,9 @@
+/*
+ * Anthony Mui
+ * Period 1
+ * E7.10
+ * Asks for either seat or price and checks if input is available
+ * */
 package CH7;
 
 import java.util.Arrays;
@@ -15,7 +21,7 @@ public class P7_7 {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 10; j++) {
                 if (seats[i][j] == choice){
-                    System.out.println("yee");
+                    System.out.println("your seat is: "+ (i+1)+", "+(j+1));
                     seats[i][j] = 0;
                     return;
                 }
@@ -26,9 +32,7 @@ public class P7_7 {
 
     public void checkSeating(int choice1, int choice2){
         if ( seats[choice1+1][choice2+1] != 0){
-            System.out.println("yee");
-            System.out.println(choice1);
-            System.out.println(choice2);
+            System.out.println("seat "+choice1+","+ choice2 +" available");
             seats[choice1-1][choice2-1] = 0;
         } else {
             System.out.println("no seats available");
@@ -53,9 +57,9 @@ public class P7_7 {
             String help = new Scanner(System.in).next();
             if (help.equals("seat")){
                 System.out.print("input row: ");
-                int choice1 = new Scanner(System.in).nextInt();// if (!(choice1 < 10 && choice1 > 0) || (choice1 != (int)choice1)){ System.out.println("input valid response"); return;}
+                int choice1 = new Scanner(System.in).nextInt(); if (!(choice1 < 10 && choice1 > 0) || (choice1 != (int)choice1)){ System.out.println("input valid response"); return;}
                 System.out.print("input column: ");
-                int choice2 = new Scanner(System.in).nextInt();// if (!(choice2 < 10 && choice2 > 0) || (choice2 != (int)choice2)){ System.out.println("input valid response"); return;}
+                int choice2 = new Scanner(System.in).nextInt(); if (!(choice2 < 10 && choice2 > 0) || (choice2 != (int)choice2)){ System.out.println("input valid response"); return;}
                 test.checkSeating(choice1,choice2);
                 test.printArray();
             } else if (help.equals("price")){

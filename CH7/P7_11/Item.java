@@ -1,3 +1,9 @@
+/*
+ * Anthony Mui
+ * Period 1
+ * E7.10
+ * item class to define items
+ * */
 package CH7.P7_11;
 
 public class Item {

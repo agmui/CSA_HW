@@ -1,4 +1,12 @@
+/*
+* Anthony Mui
+* Period 1
+* E7.10
+* takes a array input and can order it either by shift right or swapping first and last element
+* */
 package CH7;
+
+import java.util.Scanner;
 
 public class E7_10 {
     private int[] values;
@@ -20,7 +28,13 @@ public class E7_10 {
         values[0] = last;
     }
     public static void test(){
-        int[] x = {1,2,3,4};
+        System.out.print("input how many num in array: ");
+        int len = new Scanner(System.in).nextInt();
+        int[] x = new int[len];
+        for (int i = 0; i < x.length; i++) {
+            System.out.print("input "+ i +"th number: ");
+            x[i] = new Scanner(System.in).nextInt();
+        }
         E7_10 test = new E7_10(x);
         test.swapFirstAndLast();
         test.shiftRight();

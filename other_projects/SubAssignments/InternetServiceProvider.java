@@ -1,3 +1,9 @@
+/*
+ * Anthony Mui
+ * Period 1
+ * Sub assignment
+ * Asks for package and hours returns money owed
+ * */
 package other_projects.SubAssignments;
 
 import java.util.Scanner;
