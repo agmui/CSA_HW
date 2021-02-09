@@ -3,9 +3,9 @@ package CH8;
 import java.util.ArrayList;
 
 public class GroceryList {
-    private ArrayList list;
+    private ArrayList<GroceryItemOrder> list;
     public GroceryList(){
-        list = new ArrayList<GroceryItemOrder>();
+        list = new ArrayList<>();
     }
     public void add(GroceryItemOrder item){
         if (list.size()>10){
@@ -16,13 +16,9 @@ public class GroceryList {
     }
     public double getTotalCost(){
         double total = 0;
-        for (int i = 0; i < list.size(); i++) {
-            GroceryItemOrder x = (GroceryItemOrder) list.get(i);
-            total += x.getCost() * x.getQuantity();
+        for (Object o : list) {
+            total += ((GroceryItemOrder) o).getCost() * ((GroceryItemOrder) o).getQuantity();
         }
-        /*for (GroceryItemOrder i : list) {
-            total+=i.getCost() + i.quantity;
-        }*/
         return total;
     }
     public static void main(String[] args) {
