@@ -1,8 +1,10 @@
 /*
-*
-*
-*
-* */
+ * Anthony Mui
+ * Period 1
+ * E7.10
+ * takes a array input and can order it either by shift right or swapping first and last element
+ * */
+
 package CH8;
 
 public class RationalNumber {
