@@ -1,8 +1,15 @@
+/*
+Anthony Mui
+Apoorva Sannasi
+Jared Weinstein
+Pranav Rao
+Shreay Chigurupati
+* */
 package other_projects.CH9Practice;
 
 public class Employee {
-    private String name;
-    private double salary;
+    public final String name;
+    public double salary;
     public Employee(String name, double salary){
        this.name = name;
        this.salary = salary;
@@ -19,8 +26,8 @@ public class Employee {
     public void bonus(){
        this.salary *= 1.1;
     }
-    public void equals(){
-
+    public boolean equals(String name, double salary){
+        return (!(name.equals(this.name) && (salary == this.salary)));
     }
 
     @Override
@@ -44,17 +51,44 @@ class Manager extends Employee{
     }
 
     public void bonus(){
-        //this.salary *= 1.2;
+        super.salary *= 1.2;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "id='" + id + '\'' +
+                '}'+super.toString();
     }
 }
 
 class EmployeeTester{
+    public static void test(Employee[] l){
+        for (Employee i: l) {
+            System.out.println(i.getName() + i.getSalary());
+            i.setSalary(2);
+            i.bonus();
+            System.out.println((i.equals(l[0])));
+            System.out.println(i.toString());
+        }
+    }
     public static void main(String[] args) {
-       Employee x = new Employee("x", 1);
-        System.out.println(x.getName()+x.getSalary());
-        x.setSalary(2);
-        x.bonus();
-        x.equals();
-        x.toString();
+        Employee e1 = new Employee("e1", 1);
+        Employee e1_cp = new Employee("e1", 1);
+        Employee e2 = new Employee("e2", 1);
+        Employee e3 = new Employee("e3", 1);
+        Employee[] l = {e1, e1_cp, e2, e3};
+        //System.out.println((e1_cp.equals(e1)));
+        test(l);
+        Manager m1 = new Manager("m1", 1, "1");
+        Manager m2 = new Manager("m2", 1, "1");
+        Manager m3 = new Manager("m3", 1, "1");
+        Manager[] l2 = {m1, m2, m3};
+        test(l2);
+        for (Manager i: l2) {
+            System.out.println(i.getId());
+            i.bonus();
+            System.out.println(i.toString());
+        }
     }
 }
