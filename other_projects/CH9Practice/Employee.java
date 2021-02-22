@@ -50,7 +50,7 @@ class Manager extends Employee{
     }
 
     public void bonus(){
-        super.salary *= 1.2;
+        setSalary(getSalary()*1.2);
     }
 
     @Override
