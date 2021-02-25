@@ -36,6 +36,10 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
+    public boolean compareTo(Object o){
+        Employee e = (Employee) o;
+        return (this.salary > e.getSalary());
+    }
 }
 
 class Manager extends Employee{
@@ -68,9 +72,7 @@ class EmployeeTester{
             i.setSalary(2);
             i.bonus();
             for (Employee j: l) {
-               if(j.equals(i)){
-                   System.out.println(11);
-               }
+                System.out.println(j.equals(i)+" "+j.compareTo(i));
             }
             System.out.println((i.equals(l[0])));
             System.out.println(i.toString());
