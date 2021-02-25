@@ -79,7 +79,7 @@ class EmployeeTester{
     }
     public static void main(String[] args) {
         Employee e1 = new Employee("e1", 1);
-        Employee e1_cp = new Employee("e1", 1);
+        Employee e1_cp = new Employee("e1", 3);
         Employee e2 = new Employee("e2", 1);
         Employee e3 = new Employee("e3", 1);
         Employee[] l = {e1, e1_cp, e2, e3};
