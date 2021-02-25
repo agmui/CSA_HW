@@ -36,9 +36,9 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
-    public boolean compareTo(Object o){
+    public int compareTo(Object o){
         Employee e = (Employee) o;
-        return (this.salary > e.getSalary());
+        return (Double.compare(this.salary, e.getSalary()));
     }
 }
 
@@ -68,13 +68,12 @@ class Manager extends Employee{
 class EmployeeTester{
     public static void test(Employee[] l){
         for (Employee i: l) {
-            System.out.println(i.getName() + i.getSalary());
+            System.out.println(i.getName() +" "+ i.getSalary());
             i.setSalary(2);
             i.bonus();
             for (Employee j: l) {
-                System.out.println(j.equals(i)+" "+j.compareTo(i));
+                System.out.println(j.equals(i)+" "+i.compareTo(j));
             }
-            System.out.println((i.equals(l[0])));
             System.out.println(i.toString());
         }
     }
