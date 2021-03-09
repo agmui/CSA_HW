@@ -1,3 +1,9 @@
+/*
+Anthony Mui
+Period 1
+#4-7
+ticket class
+ */
 package CH9;
 
 public class Tickets {
@@ -28,8 +34,8 @@ class WalkupTicket extends Tickets{
     }
 }
 
-class AdcanceTicket extends Tickets{
-    public AdcanceTicket(int day){
+class AdvanceTicket extends Tickets{
+    public AdvanceTicket(int day){
         super();
         if (day >= 10){
             super.price = 30.00;
@@ -39,7 +45,7 @@ class AdcanceTicket extends Tickets{
     }
 }
 
-class StudentAdvanceTicket extends AdcanceTicket{
+class StudentAdvanceTicket extends AdvanceTicket {
     public StudentAdvanceTicket(int day){
         super(day);
         if (day >= 10){
@@ -58,7 +64,7 @@ class Test{
     public static void main(String[] args) {
         WalkupTicket test = new WalkupTicket();
         System.out.println(test.toString());
-        AdcanceTicket test2 = new AdcanceTicket(1);
+        AdvanceTicket test2 = new AdvanceTicket(1);
         System.out.println(test2.toString());
         StudentAdvanceTicket test3 = new StudentAdvanceTicket(10);
         System.out.println(test3.toString());

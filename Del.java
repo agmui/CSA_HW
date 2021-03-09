@@ -1,19 +1,7 @@
-public class Del{
-  public static void main(String[] args) {
-
-    Parent kid = new Child();
-    kid.doSomething(); // line 1
-
-
-
-  }
-}
-class Parent
-{
-  public void doSomething(){/* Implementation not shown */}
-}
-
-class Child extends Parent
-{
-  public void doAnotherThing(){/* Implementation not shown */}
+class Del{
+    public static void main(String[] args) {
+        double salary = 45000.00;
+        String sal = "Current salary is " + salary;
+        System.out.println(sal);
+    }
 }

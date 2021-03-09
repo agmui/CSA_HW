@@ -1,3 +1,9 @@
+/*
+Anthony Mui
+Period 1
+P9.3
+ticket class
+ */
 package CH9;
 
 import java.util.ArrayList;
