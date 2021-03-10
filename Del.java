@@ -1,7 +1,9 @@
+import java.lang.reflect.AnnotatedArrayType;
+import java.util.Random;
+
 class Del{
     public static void main(String[] args) {
-        double salary = 45000.00;
-        String sal = "Current salary is " + salary;
-        System.out.println(sal);
+        String ANSI_RESET = "\u001B[0m";
+        System.out.println(ANSI_RESET+"help"+ ANSI_RESET);
     }
 }

@@ -14,6 +14,7 @@ import java.util.Random;
  */
 public class Magpie5
 {
+    public static int run = 0;
 	/**
 	 * Get a default greeting 	
 	 * @return a greeting
@@ -277,6 +278,10 @@ public class Magpie5
 	 */
 	private String getRandomResponse ()
 	{
+		if (run == 0){
+		    run++;
+			return randomResponses[7];
+		}
 		Random r = new Random ();
 		return randomResponses [r.nextInt(randomResponses.length)];
 	}
@@ -284,7 +289,22 @@ public class Magpie5
 	private String [] randomResponses = {"Interesting, tell me more",
 			"Hmmm.",
 			"Do you really think so?",
-			"You don't say."
+			"You don't say.",
+			"ym",
+			"1773",
+			"dn",
+			"Exception in thread \"main\" java.lang.StackOverflowError\n" +
+					"        at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)\n" +
+					"        at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)\n" +
+					"        at roses.are.red.violets(are.blue:,missing)curlybrace\n" +
+					"        on line.32.PrintStream.write(PrintStream.java:480)\n" +
+					"        at sun.nio.cs.StreamEncoder.flushBuffer(StreamEncoder.java:104)\n" +
+					"        at java.io.OutputStreamWriter.flushBuffer(OutputStreamWriter.java:185)\n" +
+					"        at java.io.PrintStream.print(PrintStream.java:669)\n" +
+					"        at java.io.PrintStream.println(PrintStream.java:806)\n" +
+					"        at StackOverflowErrorExample.recursivePrint(StackOverflowErrorExample.java:4)\n" +
+					"        at StackOverflowErrorExample.recursivePrint(StackOverflowErrorExample.java:9)\n" +
+					"        at StackOverflowErrorExample.recursivePrint(StackOverflowErrorExample.java:9)\n" +
+					"        at StackOverflowErrorExample.recursivePrint(DonotpressenterDonotcollect100dollers.java:9)"
 	};
-	
 }
