@@ -1,3 +1,9 @@
+/*
+Anthony Mui
+Period 1
+Sub assignments
+Bank class
+ */
 package other_projects.SubAssignments;
 
 public class Bank {
