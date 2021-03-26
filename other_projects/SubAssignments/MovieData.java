@@ -1,6 +1,5 @@
 package other_projects.SubAssignments;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class MovieData {
