@@ -1,4 +1,4 @@
-package CH11;
+package CH13;
 
 public class Q10 {
     public static String random(String s, int n){

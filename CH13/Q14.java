@@ -1,4 +1,4 @@
-package CH11;
+package CH13;
 
 public class Q14 {
     public static double P(double n, double r){

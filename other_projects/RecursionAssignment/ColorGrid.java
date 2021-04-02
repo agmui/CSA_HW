@@ -5,10 +5,6 @@ public class ColorGrid {
     private int myRows;
     private int myCols;
 
-    /*
-    Creates numRows by numCols Colorgrid from string s
-    @param s string contating colors for the grid
-     */
     public ColorGrid(String s, int numRows, int numCols){
         myPixels = new String[numCols][numRows];
         myRows = numRows;
@@ -25,7 +21,6 @@ public class ColorGrid {
         if (newColor.equals(myPixels[col][row])){
             return;
         }
-        printGrid();
         if (row > 0 && myPixels[col][row - 1].equals(oldColor)) {//left
            myPixels[col][row] = newColor;
            this.paintRegion(row-1, col, newColor, oldColor);
