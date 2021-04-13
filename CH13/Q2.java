@@ -1,4 +1,4 @@
-package CH11;
+package CH13;
 
 public class Q2 {
     public static String writeNums(int n){

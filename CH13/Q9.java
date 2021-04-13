@@ -1,6 +1,4 @@
-package CH11;
-
-import java.util.Arrays;
+package CH13;
 
 public class Q9 {
     public static double sumTo(int n){
